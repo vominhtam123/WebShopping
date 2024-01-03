@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,500;1,100&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300;1,500&family=Roboto:ital,wght@0,500;1,100&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:300;400;500;700&display=swap&subset=vietnamese"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -22,25 +23,60 @@
   <body>
     <div class="app">
       <header class="header">
-        <nav class="header__navbar">
-          <ul class="header__navbar-list">
-            <li class="header__navbar-item">
-              Vào cửa hàng trên ứng dụng bán hàng CellPhone
-            </li>
-            <li class="header__navbar-item">Kết nối</li>
-          </ul>
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--separate">
+                Vào cửa hàng trên ứng dụng bán hàng CellPhone
+                <div class="header__qr">
+                  <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img"/>
+                  
+                  <div class="header__qr-apps">
+                    <img src="./assets/img/google_play.png" alt="Google play" class="header__qr-download-img" />
+                    <img src="./assets/img/app_store.png" alt="App store" class="header__qr-download-img" />
+                  </div>
+                </div>
+              </li>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer">Kết nối</span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100043829702754"
+                  class="header__navbar-icon-link"
+                >
+                  <i class="header__navbar-icon fab fa-facebook"></i>
+                </a>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header__navbar-icon fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
 
-          <ul class="header__navbar-list">
-            <li class="header__navbar-item">
-              <a href="" class="header__navbar-item-link">Thông Báo</a>
-            </li>
-            <li class="header__navbar-item">
-              <a href="" class="header__navbar-item-link">Trợ giúp</a>
-            </li>
-            <li class="header__navbar-item">Đăng kí</li>
-            <li class="header__navbar-item">Đăng nhập</li>
-          </ul>
-        </nav>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header__navbar-icon fas fa-bell"></i>
+                  Thông Báo
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-item-link">
+                  <i
+                    class="header__navbar-icon fa-regular fa-circle-question"
+                  ></i>
+                  Trợ giúp
+                </a>
+              </li>
+              <li
+                class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
+              >
+                Đăng kí
+              </li>
+              <li class="header__navbar-item header__navbar-item--strong">
+                Đăng nhập
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <div class="container"></div>
