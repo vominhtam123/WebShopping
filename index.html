@@ -26,17 +26,37 @@
         <div class="grid">
           <nav class="header__navbar">
             <ul class="header__navbar-list">
-              <li class="header__navbar-item header__navbar-item--separate">
+              <li
+                class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
+              >
                 Vào cửa hàng trên ứng dụng bán hàng CellPhone
+                <!-- Header QR code -->
                 <div class="header__qr">
-                  <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img"/>
-                  
+                  <img
+                    src="./assets/img/qr_code.png"
+                    alt="QR code"
+                    class="header__qr-img"
+                  />
+
                   <div class="header__qr-apps">
-                    <img src="./assets/img/google_play.png" alt="Google play" class="header__qr-download-img" />
-                    <img src="./assets/img/app_store.png" alt="App store" class="header__qr-download-img" />
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="./assets/img/google_play.png"
+                        alt="Google play"
+                        class="header__qr-download-img"
+                      />
+                    </a>
+                    <a href="" class="header__qr-link">
+                      <img
+                        src="./assets/img/app_store.png"
+                        alt="App store"
+                        class="header__qr-download-img"
+                      />
+                    </a>
                   </div>
                 </div>
               </li>
+              <!-- Code ket noi va Icon -->
               <li class="header__navbar-item">
                 <span class="header__navbar-title--no-pointer">Kết nối</span>
                 <a
@@ -50,13 +70,78 @@
                 </a>
               </li>
             </ul>
-
+            <!-- code thanh thong bao va tro giup -->
             <ul class="header__navbar-list">
-              <li class="header__navbar-item">
+              <li class="header__navbar-item header__navbar-item--has-notify">
                 <a href="" class="header__navbar-item-link">
                   <i class="header__navbar-icon fas fa-bell"></i>
                   Thông Báo
                 </a>
+                <div class="header__notify">
+                  <header class="header__notify-header">
+                    <h3 class="header__notify-header-h3">Thông Báo Mới Nhận</h3>
+                  </header>
+                  <ul class="header__notify-list">
+                    <li class="header__notify-item header__notify-item--views">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://down-vn.img.susercontent.com/file/vn-50009109-cebfae17cd5979d823fb74ac79a922fa_xhdpi"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >My Pham Qhui chính hãng</span
+                          >
+                          <span class="header__notify-description"
+                            >Mô tả Qhui chính hãng</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item header__notify-item--views">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://down-vn.img.susercontent.com/file/vn-50009109-06fb832ef52b45481158c26831cc459b_xhdpi"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Bạn có đơn hàng đang trên đường giao</span
+                          >
+                          <span class="header__notify-description"
+                            >bạn vẫn đang trong quá trình vận chuyển và dự kiến
+                            được giao trong 1-2 ngày tới. Vui lòng bỏ qua thông
+                            báo này nếu bạn đã nhận được hàng nhé!😊</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link">
+                        <img
+                          src="https://down-vn.img.susercontent.com/file/22fbed31aad2660a2cd725f27d32f6cd_tn"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Bạn có đơn hàng đang trên đường giao</span
+                          >
+                          <span class="header__notify-description"
+                            >bạn vẫn đang trong quá trình vận chuyển và dự kiến
+                            được giao trong 1-2 ngày tới. Vui lòng bỏ qua thông
+                            báo này nếu bạn đã nhận được hàng nhé!😊</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-btn">Xem Tất Cả</a>
+                  </footer>
+                </div>
               </li>
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link">
@@ -65,7 +150,10 @@
                   ></i>
                   Trợ giúp
                 </a>
+               
+                
               </li>
+              <!-- Dang ki dang nhap code -->
               <li
                 class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
               >
