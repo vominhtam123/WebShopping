@@ -439,18 +439,39 @@
     border-color: transparent transparent var(--white-color) transparent;
 }
 .header__cart-list-no-cart-msg{
-    display: block;
+    display: none;
     font-size: 1.4rem;
     margin-top: 14px;
     color: var(--text-color);
+}
+.header__cart-notice{
+    position: absolute;
+    padding: 1px 7px;
+    top: -4px;
+    right: -4px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    border: 2px solid #EE4D2D;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--primary-color);
+    
+}
+
+.header__cart-list--no-cart .header__cart-no-cart-img, 
+.header__cart-list--no-cart .header__cart-list-no-cart-msg{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .header__cart-list--no-cart {
     padding: 24px 0;
 }
 
-.header__cart-list-no-cart-img {
+.header__cart-no-cart-img {
     width: 54%;
+    display: none;
 
 }
 .header__search-input-wrap{
