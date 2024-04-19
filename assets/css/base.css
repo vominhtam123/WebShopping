@@ -22,6 +22,7 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+/* Responsive */
 .grid {
   width: 1400px;
   max-width: 100%;
@@ -33,7 +34,21 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
 }
+/* Test */
+.gird__column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+}
+.gird__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3334%;
+}
+
 /* Animation */
 @keyframes fadeIn {
   from {
@@ -89,10 +104,11 @@ html {
   outline: none;
   cursor: pointer;
   color: var(--text-color);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   line-height: 1.6rem;
+  background-color: #e8dddd;
 }
 .btn.btn--normal:hover {
   background-color: rgba(0, 0, 0, 0.09);
